@@ -14,6 +14,17 @@
   - Paramètres viewport : `once: true, amount: 0.2` (animation une seule fois, déclenchée à 20% de visibilité)
   - Transition : `duration: 0.6, ease: 'easeOut'`
 
+### Three.js Stack (three, @react-three/fiber, @react-three/drei, @types/three)
+- **Version :** Installée via npm
+- **Usage :** Rendu 3D dans React, implémentation d'avatars et scènes interactives
+- **Implémentation :**
+  - Composant `AvatarScene` dans `src/components/AvatarScene/AvatarScene.tsx`
+  - Utilise `Canvas` de @react-three/fiber comme conteneur principal
+  - Modèle 3D rotatif avec `useFrame` pour l'animation continue
+  - `OrbitControls` pour l'interaction utilisateur (rotation manuelle, auto-rotation)
+  - Configuration d'éclairage : `ambientLight` (0.5 intensity) + `directionalLight` (position [10,10,5])
+  - Matériau métallique : `meshStandardMaterial` avec metalness: 0.7, roughness: 0.2
+
 ## Patterns de Conception Établis
 
 ### Wrapper d'Animation Réutilisable
@@ -37,6 +48,13 @@
 - **Props :** `{ children: React.ReactNode }`
 - **Fonctionnalité :** Animation d'apparition progressive lors du scroll
 - **Utilisation :** Wrapper autour des sections de contenu pour améliorer l'UX
+
+### AvatarScene
+- **Localisation :** `src/components/AvatarScene/AvatarScene.tsx`
+- **Props :** Aucune
+- **Fonctionnalité :** Scène 3D interactive avec modèle rotatif
+- **Utilisation :** Intégré dans la HeroSection pour affichage 3D
+- **Interactions :** Rotation manuelle par clic-glisser, auto-rotation désactivable par zoom
 
 ### Layout Responsive
 - **Localisation :** `src/app/globals.scss`

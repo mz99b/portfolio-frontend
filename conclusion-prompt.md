@@ -193,4 +193,25 @@ Refonte de l'application en structure monopage avec création des composants de 
   - Utilisation de CSS Grid avec breakpoint tablet-l (1024px)
   - Menu mobile avec backdrop-filter et transition d'opacité
   - État React (useState) pour gérer l'ouverture/fermeture
-- **Prochaines Étapes**: Attendre les instructions pour l'implémentation de la scène Three.js dans le conteneur préparé. 
+- **Prochaines Étapes**: Attendre les instructions pour l'implémentation de la scène Three.js dans le conteneur préparé.
+
+## PROMPT-020: Initialisation de la Scène three.js avec un Placeholder Rotatif
+- **Status**: ✅ Complété
+- **Date**: 16/06/2025
+- **Actions Réalisées**:
+  1. Installation des dépendances Three.js : three, @react-three/fiber, @react-three/drei, @types/three
+  2. Création du composant AvatarScene dans src/components/AvatarScene/
+  3. Implémentation d'une scène 3D avec cube métallique rotatif
+  4. Intégration du composant dans la HeroSection (colonnes de droite)
+  5. Suppression de la bordure placeholder du threeContainer
+  6. Mise à jour du tech-stack-log.md avec les nouveaux outils 3D
+- **Résultat**: 
+  - Desktop : Cube métallique gris rotatif dans la colonne droite de la Hero
+  - Mobile : Cube apparaît sous le texte de la Hero
+  - Interactions : Rotation manuelle par clic-glisser, auto-rotation continue
+- **Détails Techniques**:
+  - Canvas Three.js avec ambientLight et directionalLight
+  - Modèle : boxGeometry (2x2x2) avec meshStandardMaterial métallique
+  - OrbitControls : zoom désactivé, auto-rotation à 0.5 vitesse
+  - Animation : useFrame avec rotation continue (0.005 rad/frame)
+- **Prochaines Étapes**: Attendre les instructions pour remplacer le cube par un avatar 3D ou d'autres améliorations visuelles. 

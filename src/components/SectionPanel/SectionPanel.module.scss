@@ -23,7 +23,7 @@
   }
 */
 
-@import '../../app/styles/mixins'; // Import des mixins pour le responsive
+@use '../../app/styles/mixins' as *; // Import des mixins pour le responsive
 
 .panel {
   padding: 2rem;
