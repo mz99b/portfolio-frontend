@@ -11,7 +11,6 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className={styles.projectsContainer}>
       <div className={styles.sectionContent}>
-        <h2>Projets Sélectionnés</h2>
         <ul className={styles.projectsList}>
           {projects.map((project) => (
             <li key={project.name}>
