@@ -1,0 +1,19 @@
+.navContainer {
+  position: sticky; // Reste fixe lors du scroll
+  top: 0;
+  height: 100vh; // Prend toute la hauteur de l'écran
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem; // Espace entre la nav et le contenu
+  border-right: 1px solid var(--color-primary);
+  writing-mode: vertical-rl; // Écrit le texte verticalement
+  gap: 2rem;
+
+  a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    transform: rotate(180deg); // Réoriente le texte pour la lisibilité
+  }
+}

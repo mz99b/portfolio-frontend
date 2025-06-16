@@ -19,8 +19,10 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body className={inter.className}>
         <div className="circuit-bg" />
-        <Navigation />
-        <main>{children}</main>
+        <div className="app-container">
+          <Navigation />
+          <main className="main-content">{children}</main>
+        </div>
       </body>
     </html>
   );

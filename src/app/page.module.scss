@@ -1,1 +1,7 @@
 // Styles pour la page d'accueil - à compléter plus tard
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; // Un peu d'espace entre la Hero Section et le premier panel
+}

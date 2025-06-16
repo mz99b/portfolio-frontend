@@ -118,4 +118,16 @@ Refonte de l'application en structure monopage avec création des composants de 
   4. Simplification des composants de section existants
   5. Mise à jour de la navigation avec la nouvelle nomenclature
 - **Résultat**: Structure de page améliorée avec des sections uniformes et une navigation cohérente.
-- **Prochaines Étapes**: Attendre les instructions pour le styling des panneaux de section. 
+- **Prochaines Étapes**: Attendre les instructions pour le styling des panneaux de section.
+
+## PROMPT-015: Mise en Page Principale et Style des Panneaux
+- **Status**: ✅ Complété
+- **Date**: [Date du jour]
+- **Actions Réalisées**:
+  1. Modification du layout principal avec ajout du conteneur app-container
+  2. Ajout des styles de disposition dans globals.scss
+  3. Implémentation du style de navigation verticale
+  4. Création des styles pour les SectionPanel avec effet de verre
+  5. Ajustement des styles de la page principale
+- **Résultat**: Interface utilisateur améliorée avec navigation latérale fixe et panneaux stylisés.
+- **Prochaines Étapes**: Attendre les instructions pour les ajustements responsives et les animations. 

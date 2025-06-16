@@ -135,3 +135,17 @@ a:hover {
   95% { clip-path: inset(50% 0 40% 0); }
   100% { clip-path: inset(38% 0 53% 0); }
 }
+
+/* === Layout Styles from Prompt-015 === */
+
+.app-container {
+  display: flex;
+  max-width: 1440px; // Contraint la largeur sur les grands écrans
+  margin: 0 auto; // Centre le conteneur
+  padding: 0 2rem; // Ajoute un peu d'espace sur les côtés
+}
+
+.main-content {
+  flex-grow: 1; // Le contenu principal prend tout l'espace restant
+  padding: 2rem 0; // Espace en haut et en bas
+}
