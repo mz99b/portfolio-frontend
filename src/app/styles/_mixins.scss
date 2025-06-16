@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+// Mixin for mobile-first media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile-p {
+    @media (min-width: $breakpoint-mobile-p) { @content; }
+  }
+  @else if $breakpoint == mobile-l {
+    @media (min-width: $breakpoint-mobile-l) { @content; }
+  }
+  @else if $breakpoint == tablet-p {
+    @media (min-width: $breakpoint-tablet-p) { @content; }
+  }
+  @else if $breakpoint == tablet-l {
+    @media (min-width: $breakpoint-tablet-l) { @content; }
+  }
+  @else if $breakpoint == laptop {
+    @media (min-width: $breakpoint-laptop) { @content; }
+  }
+}

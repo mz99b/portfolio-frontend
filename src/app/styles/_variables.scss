@@ -1,0 +1,8 @@
+// Breakpoints based on reference image
+// Using a mobile-first approach (min-width)
+
+$breakpoint-mobile-p: 480px;  // Mobile Portrait and up
+$breakpoint-mobile-l: 768px;  // Mobile Landscape and up
+$breakpoint-tablet-p: 834px;  // Tablet Portrait and up
+$breakpoint-tablet-l: 1024px; // Tablet Landscape and up
+$breakpoint-laptop: 1440px;   // Laptop and up
