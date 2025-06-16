@@ -14,8 +14,9 @@
 
 .textContainer {
   h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
   }
 
   h2 {
@@ -37,6 +38,20 @@
   height: 100%;
   min-height: 400px; // Hauteur minimale pour être visible
   width: 100%;
+  position: relative;
+}
+
+.avatarNote {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  opacity: 0.8;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
 }
 
 // Styles pour les écrans plus petits
@@ -44,7 +59,7 @@
   .heroContainer {
     min-height: 60vh;
     h1 {
-      font-size: 2.5rem;
+      font-size: 3.2rem;
     }
     h2 {
       font-size: 1rem;
@@ -56,7 +71,7 @@
   .heroContainer {
     min-height: 50vh;
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 }

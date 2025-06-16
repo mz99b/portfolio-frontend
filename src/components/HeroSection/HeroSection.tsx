@@ -18,6 +18,7 @@ const HeroSection = () => {
       </div>
       <div className={styles.threeContainer}>
         <AvatarScene />
+        <p className={styles.avatarNote}>Avatar 3D en cours de développement...</p>
       </div>
     </section>
   );
