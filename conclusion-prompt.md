@@ -142,4 +142,55 @@ Refonte de l'application en structure monopage avec création des composants de 
   4. Harmonisation des styles de liste pour Projects et Contact
   5. Application d'une hiérarchie visuelle cohérente
 - **Résultat**: Interface utilisateur avec une typographie plus technique et structurée, utilisant Roboto Mono comme police principale.
-- **Prochaines Étapes**: Attendre les instructions pour les animations et les interactions. 
+- **Prochaines Étapes**: Attendre les instructions pour les animations et les interactions.
+
+## PROMPT-017: Implémentation d'Animations d'Entrée avec Framer Motion
+- **Status**: ✅ Complété
+- **Date**: 16/06/2025
+- **Actions Réalisées**:
+  1. Installation de la dépendance framer-motion via npm
+  2. Création du composant AnimatedPanel dans src/components/AnimatedPanel/
+  3. Implémentation du composant avec animations d'entrée (opacity + y transform)
+  4. Refactorisation de src/app/page.tsx pour envelopper chaque SectionPanel avec AnimatedPanel
+  5. Création du fichier tech-stack-log.md pour documenter l'ajout de la nouvelle bibliothèque
+- **Résultat**: Chaque section (Expérience, Projets, Contact) s'anime maintenant lors de l'apparition dans le viewport avec un effet de fondu et de translation.
+- **Détails Techniques**: 
+  - Animation : `initial={{ opacity: 0, y: 20 }}` vers `whileInView={{ opacity: 1, y: 0 }}`
+  - Viewport : `once: true, amount: 0.2` (déclenché une fois à 20% de visibilité)
+  - Transition : `duration: 0.6, ease: 'easeOut'`
+- **Prochaines Étapes**: Attendre les instructions pour d'autres animations ou ajustements d'interface.
+
+## PROMPT-018: Implémentation du Design Adaptatif (Responsive)
+- **Status**: ✅ Complété
+- **Date**: 16/06/2025
+- **Actions Réalisées**:
+  1. Ajout des styles responsive dans globals.scss pour le layout principal
+  2. Transformation de la navigation verticale en barre horizontale sur tablette/mobile
+  3. Adaptation de la HeroSection avec réduction de typographie pour petits écrans
+  4. Ajustement du padding et des tailles de police pour SectionPanel sur mobile
+  5. Correction de l'import des mixins dans Navigation.module.scss
+- **Résultat**: Application entièrement responsive avec breakpoints tablet-l (1024px) et mobile-l.
+- **Breakpoints**: 
+  - Desktop (>1024px) : Layout original avec navigation verticale
+  - Tablette/Mobile (≤1024px) : Navigation horizontale, layout en colonne
+  - Mobile spécifique : Padding et typographie réduits
+- **Prochaines Étapes**: Attendre les instructions pour d'autres optimisations ou fonctionnalités.
+
+## PROMPT-019: Refonte du Layout Hero et de la Navigation Mobile
+- **Status**: ✅ Complété
+- **Date**: 16/06/2025
+- **Actions Réalisées**:
+  1. Refonte de la HeroSection avec une structure à deux colonnes (texte + canvas)
+  2. Mise à jour des styles de la HeroSection avec un layout en grille responsive
+  3. Transformation de la Navigation en composant client avec état
+  4. Implémentation d'un menu mobile plein écran avec bouton flottant
+  5. Ajout des transitions et animations pour l'ouverture/fermeture du menu
+- **Résultat**: 
+  - Desktop : Layout à deux colonnes avec navigation verticale inchangée
+  - Mobile : Layout en colonne avec menu plein écran et bouton flottant
+  - Interactions : Menu mobile avec animation d'apparition et fermeture automatique
+- **Détails Techniques**:
+  - Utilisation de CSS Grid avec breakpoint tablet-l (1024px)
+  - Menu mobile avec backdrop-filter et transition d'opacité
+  - État React (useState) pour gérer l'ouverture/fermeture
+- **Prochaines Étapes**: Attendre les instructions pour l'implémentation de la scène Three.js dans le conteneur préparé. 

@@ -4,15 +4,20 @@ const HeroSection = () => {
   const title = "Matthieu Burger";
   return (
     <section id="hero" className={styles.heroContainer}>
-      <h1>
-        <span className="glitch" data-text={title}>
-          {title}
-        </span>
-      </h1>
-      <h2>Concepteur d&apos;Application Web & Développeur Full-Stack</h2>
-      <p>
-        Développeur indépendant, très motivé afin d&apos;intégrer et d&apos;apprendre au sein d&apos;une entreprise. Curieux et intéressé, je saurais être à l&apos;écoute des missions qu&apos;on me propose afin de progresser et de faire avancer l&apos;entreprise !
-      </p>
+      <div className={styles.textContainer}>
+        <h1>
+          <span className="glitch" data-text={title}>
+            {title}
+          </span>
+        </h1>
+        <h2>Concepteur d'Application Web & Développeur Full-Stack</h2>
+        <p>
+          Développeur indépendant, très motivé afin d'intégrer et d'apprendre au sein d'une entreprise. Curieux et intéressé, je saurais être à l'écoute des missions qu'on me propose afin de progresser et de faire avancer l'entreprise !
+        </p>
+      </div>
+      <div className={styles.threeContainer}>
+        {/* Ce conteneur est prêt pour la scène three.js */}
+      </div>
     </section>
   );
 };

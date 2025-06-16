@@ -149,3 +149,12 @@ a:hover {
   flex-grow: 1; // Le contenu principal prend tout l'espace restant
   padding: 2rem 0; // Espace en haut et en bas
 }
+
+/* === Responsive Styles from Prompt-018 === */
+
+@include respond-to(tablet-l) {
+  .app-container {
+    flex-direction: column;
+    padding: 0 1rem; // Moins de padding sur mobile
+  }
+}
