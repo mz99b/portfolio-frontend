@@ -1,0 +1,38 @@
+.job {
+  margin-bottom: 2.5rem; // Espace entre chaque expérience
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.job h3 { // Le rôle
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.job h4 { // L'entreprise
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.period { // La période
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.job ul {
+  list-style-type: '› '; // Style de puce personnalisé
+  padding-left: 1.2rem;
+}
+
+.job li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}

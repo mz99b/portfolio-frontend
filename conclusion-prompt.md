@@ -130,4 +130,16 @@ Refonte de l'application en structure monopage avec création des composants de 
   4. Création des styles pour les SectionPanel avec effet de verre
   5. Ajustement des styles de la page principale
 - **Résultat**: Interface utilisateur améliorée avec navigation latérale fixe et panneaux stylisés.
-- **Prochaines Étapes**: Attendre les instructions pour les ajustements responsives et les animations. 
+- **Prochaines Étapes**: Attendre les instructions pour les ajustements responsives et les animations.
+
+## PROMPT-016: Refonte Typographique pour une Esthétique "Brutalist-Chic"
+- **Status**: ✅ Complété
+- **Date**: [Date du jour]
+- **Actions Réalisées**:
+  1. Remplacement de Inter par Roboto Mono comme police principale
+  2. Mise en place des styles typographiques pour la Hero Section
+  3. Structuration visuelle de la section Expérience
+  4. Harmonisation des styles de liste pour Projects et Contact
+  5. Application d'une hiérarchie visuelle cohérente
+- **Résultat**: Interface utilisateur avec une typographie plus technique et structurée, utilisant Roboto Mono comme police principale.
+- **Prochaines Étapes**: Attendre les instructions pour les animations et les interactions. 

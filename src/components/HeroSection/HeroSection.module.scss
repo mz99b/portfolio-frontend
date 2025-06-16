@@ -1,0 +1,25 @@
+.heroContainer {
+  min-height: 80vh; // Donne de l'espace pour respirer
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 3.5rem; // Titre impactant
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    max-width: 60ch; // Améliore la lisibilité
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}

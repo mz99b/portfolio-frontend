@@ -1,0 +1,19 @@
+.linksList {
+  list-style: none;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: var(--color-text-primary);
+      letter-spacing: 1px;
+    }
+  }
+}

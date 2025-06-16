@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from 'next/font/google';
 import './globals.scss';
 import Navigation from '@/components/Navigation/Navigation';
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ subsets: ['latin'], weight: ['400', '500', '700'] });
 
 export const metadata: Metadata = {
-  title: "Matthieu Burger | Développeur Full Stack",
-  description: "Portfolio de Matthieu Burger, développeur web et mobile.",
+  title: "@mztthieu",
+  description: "Portfolio de Matthieu Burger, Développeur Full-Stack",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={robotoMono.className}>
         <div className="circuit-bg" />
         <div className="app-container">
           <Navigation />
