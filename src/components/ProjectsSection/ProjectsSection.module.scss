@@ -1,8 +1,30 @@
+.projectsContainer {
+  width: 100%;
+}
+
+.sectionContent {
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
 .projectsList {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1.5rem;
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    
+    &::before {
+      content: '•';
+      position: absolute;
+      left: -1.5rem;
+      color: var(--color-primary);
+      font-size: 1.2rem;
+    }
   }
 
   a {

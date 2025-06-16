@@ -10,16 +10,18 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" className={styles.projectsContainer}>
-      <h2>Projets Sélectionnés</h2>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.name}>
-            <a href={`https://${project.url}`} target="_blank" rel="noopener noreferrer">
-              {project.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.sectionContent}>
+        <h2>Projets Sélectionnés</h2>
+        <ul className={styles.projectsList}>
+          {projects.map((project) => (
+            <li key={project.name}>
+              <a href={`https://${project.url}`} target="_blank" rel="noopener noreferrer">
+                {project.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
