@@ -16,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" style={{ scrollBehavior: 'smooth' }}>
+    <html lang="fr" suppressHydrationWarning>
       <body className={inter.className}>
+        <div className="circuit-bg" />
         <Navigation />
         <main>{children}</main>
       </body>

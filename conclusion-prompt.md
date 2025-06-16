@@ -94,4 +94,16 @@ Refonte de l'application en structure monopage avec création des composants de 
   3. Vérification de l'existence et du contenu vide des fichiers de style
   4. Validation du fonctionnement via npm run dev
 - **Résultat**: Les sections Expérience et Contact affichent maintenant correctement les informations professionnelles et les liens de contact.
-- **Prochaines Étapes**: Attendre les instructions pour le styling des composants. 
+- **Prochaines Étapes**: Attendre les instructions pour le styling des composants.
+
+## PROMPT-013: Intégration du Background Circuit et de l'Effet Glitch
+- **Status**: ✅ Complété
+- **Date**: [Date du jour]
+- **Actions Réalisées**:
+  1. Ajout de la variable de couleur glitch dans globals.scss
+  2. Intégration des styles pour le background circuit et l'effet glitch
+  3. Ajout du div circuit-bg dans le layout
+  4. Modification du titre dans HeroSection pour inclure l'effet glitch
+  5. Validation du fonctionnement avec npm run dev
+- **Résultat**: Les effets visuels (background quadrillé et glitch sur le titre) sont maintenant intégrés et fonctionnels.
+- **Prochaines Étapes**: Attendre les instructions pour d'autres améliorations visuelles. 
