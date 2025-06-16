@@ -26,18 +26,15 @@ const contactLinks: ContactLink[] = [
 
 const ContactSection = () => {
   return (
-    <section id="contact" className={styles.contactContainer}>
-      <h2>Contact & Liens</h2>
-      <ul className={styles.linksList}>
-        {contactLinks.map((link) => (
-          <li key={link.platform}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
-              <span>{link.platform}:</span> {link.displayText}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <ul className={styles.linksList}>
+      {contactLinks.map((link) => (
+        <li key={link.platform}>
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            <span>{link.platform}:</span> {link.displayText}
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

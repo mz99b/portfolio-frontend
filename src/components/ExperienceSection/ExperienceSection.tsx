@@ -49,23 +49,20 @@ const professionalExperience: Job[] = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className={styles.experienceContainer}>
-      <h2>Expérience Professionnelle</h2>
-      <div className={styles.jobsList}>
-        {professionalExperience.map((job, index) => (
-          <article key={index} className={styles.job}>
-            <h3>{job.role}</h3>
-            <h4>{job.company}</h4>
-            <p className={styles.period}>{job.period}</p>
-            <ul>
-              {job.tasks.map((task, taskIndex) => (
-                <li key={taskIndex}>{task}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </div>
-    </section>
+    <div className={styles.jobsList}>
+      {professionalExperience.map((job, index) => (
+        <article key={index} className={styles.job}>
+          <h3>{job.role}</h3>
+          <h4>{job.company}</h4>
+          <p className={styles.period}>{job.period}</p>
+          <ul>
+            {job.tasks.map((task, taskIndex) => (
+              <li key={taskIndex}>{task}</li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
   );
 };
 
