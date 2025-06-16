@@ -14,8 +14,8 @@ const contactLinks: ContactLink[] = [
   },
   {
     platform: 'GitHub',
-    url: 'https://github.com/mzz99b',
-    displayText: 'github.com/mzz99b'
+    url: 'https://github.com/mz99b',
+    displayText: 'github.com/mz99b'
   },
   {
     platform: 'LinkedIn',
